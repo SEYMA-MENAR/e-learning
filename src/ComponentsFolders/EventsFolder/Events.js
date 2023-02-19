@@ -1,16 +1,16 @@
 import React from 'react';
 import MainContent from './MainContent';
-import Sidebar from './Sidebar';
+import Sidbar from './Sidebar';
 import Title from './Title';
 
-const Calender = () => {
+const Events = () => {
   return (
     <div>
       <MainContent/>
-      <Sidebar/>
+      <Sidbar/>
       <Title/>
     </div>
   )
 }
 
-export default Calender;
+export default Events

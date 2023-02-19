@@ -3,7 +3,7 @@ import MainContent from './MainContent';
 import Sidebar from './Sidebar';
 import Title from './Title';
 
-const Calender = () => {
+const UserCourseContent = () => {
   return (
     <div>
       <MainContent/>
@@ -13,4 +13,4 @@ const Calender = () => {
   )
 }
 
-export default Calender;
+export default UserCourseContent

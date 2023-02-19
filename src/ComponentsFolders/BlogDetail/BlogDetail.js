@@ -1,19 +1,16 @@
 import React from 'react';
 import ContentA from './ContentA';
 import ContentB from './ContentB';
-import ContentC from './ContentC';
-import ContentD from './ContentD';
 
 
-const MemberShip = () => {
+const BlogDetail = () => {
   return (
     <div>
       <ContentA/>
       <ContentB/>
-      <ContentC/>
-      <ContentD/>
     </div>
   )
 }
 
-export default MemberShip
+export default BlogDetail
+

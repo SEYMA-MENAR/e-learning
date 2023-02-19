@@ -4,8 +4,7 @@ import ContentB from './ContentB';
 import ContentC from './ContentC';
 import ContentD from './ContentD';
 
-
-const MemberShip = () => {
+const CourseDetail = () => {
   return (
     <div>
       <ContentA/>
@@ -16,4 +15,6 @@ const MemberShip = () => {
   )
 }
 
-export default MemberShip
+export default CourseDetail
+
+
