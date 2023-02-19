@@ -1,6 +1,6 @@
 import React from 'react'
 
-const MainContent = () => {
+const BlogDetail = () => {
   return (
     <div>
       
@@ -8,4 +8,5 @@ const MainContent = () => {
   )
 }
 
-export default MainContent
+export default BlogDetail
+

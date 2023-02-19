@@ -1,6 +1,6 @@
 import React from 'react'
 
-const MainContent = () => {
+const Events = () => {
   return (
     <div>
       
@@ -8,4 +8,4 @@ const MainContent = () => {
   )
 }
 
-export default MainContent
+export default Events

@@ -1,6 +1,6 @@
 import React from 'react'
 
-const MainContent = () => {
+const Search = () => {
   return (
     <div>
       
@@ -8,5 +8,4 @@ const MainContent = () => {
   )
 }
 
-export default MainContent
-
+export default Search

@@ -1,6 +1,6 @@
 import React from 'react'
 
-const MainContent = () => {
+const CourseCategory = () => {
   return (
     <div>
       
@@ -8,5 +8,6 @@ const MainContent = () => {
   )
 }
 
-export default MainContent
+export default CourseCategory
+
 
