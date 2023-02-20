@@ -33,16 +33,16 @@ const SignUp = () => {
       <div className="pl-10 pt-10 pr-10 basis-1/2 flex ">
         <img src={registerImage} alt="registerImg" />
       </div>
-      <div className="pl-10 pt-10 pr-10 flex flex-col justify-center text-center basis-1/2 ">
-        <h3 className="text-2xl">Welcome to lorem!</h3>
-        <div className="mt-6 flex flex-row self-center text-center bg-[#92D6D6] p-2 text-white justify-center rounded-full w-96">
+      <div className="pl-10 lg:pt-10 pt-6 pr-10 flex flex-col justify-center text-center basis-1/2 ">
+        <h3 className="lg:text-2xl text-xl">Welcome to lorem!</h3>
+        <div className="lg:mt-6 mt-4 flex flex-row self-center text-center lg:text-base text-sm bg-[#92D6D6] lg:p-2 p-1 text-white justify-center rounded-full lg:w-96 sm:w-60 w-48">
           <div className="basis-1/2 self-center">Login</div>
-          <div className="basis-1/2 bg-[#49BBBD] rounded-full p-2">
+          <div className="basis-1/2 bg-[#49BBBD] rounded-full lg:p-2 p-1">
             Register
           </div>
         </div>
         <div className="flex flex-col mt-6 self-center">
-          <p className="text-left text-lg">
+          <p className="text-left lg:text-lg text-base">
             Lorem Ipsum is simply dummy text of the printing and <br />
             typesetting industry.
           </p>
@@ -55,34 +55,34 @@ const SignUp = () => {
           >
             <div className="form-group">
               <label>
-                <div className="text-left font-bold tracking-wider pl-2">
+                <div className="lg:text-base text-sm text-left font-bold tracking-wider pl-2">
                   Email Address
                 </div>
                 {/* <span className="lg:text-xl text-sm">{t('t-create.f1')}</span> */}
                 <input
-                  name="username"
+                  name="email"
                   type="text"
-                  className={`bg-gray-50 mt-4 border border-gray-300 text-gray-900 sm:text-sm rounded-full focus:ring-primary-600 focus:border-primary-600 block w-full lg:p-2.5 p-1  ${
-                    errors.username ? "is-invalid" : ""
+                  className={`bg-gray-50 lg:mt-4 mt-2 border border-gray-300 text-gray-900 sm:text-sm text-xs rounded-full focus:ring-primary-600 focus:border-primary-600 block w-full lg:p-2.5 p-1.5  ${
+                    errors.email ? "is-invalid" : ""
                   }`}
-                  {...register("username")}
+                  {...register("email")}
                 />
               </label>
               <div className="invalid-feedback text-red-400 lg:text-base text-sm">
-                {errors.username?.message}
+                {errors.email?.message}
               </div>
             </div>
 
             <div className="form-group">
               <label>
-                <div className="text-left font-bold tracking-wider pl-2">
+                <div className="lg:text-base text-sm text-left font-bold tracking-wider pl-2">
                   User Name
                 </div>
                 {/* <span className="lg:text-xl text-sm">{t('t-create.f1')}</span> */}
                 <input
                   name="username"
                   type="text"
-                  className={`bg-gray-50 mt-4  border border-gray-300 text-gray-900 sm:text-sm rounded-full focus:ring-primary-600 focus:border-primary-600 block w-full lg:p-2.5 p-1  ${
+                  className={`bg-gray-50 lg:mt-4 mt-2 border border-gray-300 text-gray-900 sm:text-sm text-xs rounded-full focus:ring-primary-600 focus:border-primary-600 block w-full lg:p-2.5 p-1.5  ${
                     errors.username ? "is-invalid" : ""
                   }`}
                   {...register("username")}
@@ -95,27 +95,27 @@ const SignUp = () => {
 
             <div className="form-group">
               <label>
-                <div className="text-left font-bold tracking-wider pl-2">
+                <div className="lg:text-base text-sm text-left font-bold tracking-wider pl-2">
                   Password
                 </div>
                 {/* <span className="lg:text-xl text-sm">{t('t-create.f1')}</span> */}
                 <input
-                  name="username"
-                  type="text"
-                  className={`bg-gray-50 mt-4  border border-gray-300 text-gray-900 sm:text-sm rounded-full focus:ring-primary-600 focus:border-primary-600 block w-full lg:p-2.5 p-1  ${
-                    errors.username ? "is-invalid" : ""
+                  name="password"
+                  type="password"
+                  className={`bg-gray-50 lg:mt-4 mt-2 border border-gray-300 text-gray-900 sm:text-sm text-xs rounded-full focus:ring-primary-600 focus:border-primary-600 block w-full lg:p-2.5 p-1.5  ${
+                    errors.password ? "is-invalid" : ""
                   }`}
-                  {...register("username")}
+                  {...register("password")}
                 />
               </label>
               <div className="invalid-feedback text-red-400 lg:text-base text-sm">
-                {errors.username?.message}
+                {errors.password?.message}
               </div>
             </div>
           </form>
         </div>
-        <div className="self-end">
-          <button className="flex bg-[#92D6D6] hover:bg-[#49BBBD] justify-center text-white text-lg rounded-full mt-6 w-60 p-2">Register</button>
+        <div className="lg:self-end self-center">
+          <button type="submit" className="flex bg-[#92D6D6] hover:bg-[#49BBBD] justify-center text-white lg:text-lg sm:text-base text-sm rounded-full mt-6 lg:w-60 sm:w-40 w-32 lg:p-2 p-1.5">Register</button>
         </div>
       </div>
     </div>
